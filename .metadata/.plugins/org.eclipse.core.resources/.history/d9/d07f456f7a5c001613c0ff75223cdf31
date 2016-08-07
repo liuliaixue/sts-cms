@@ -1,0 +1,21 @@
+package org.alan.basic.model;
+
+import java.util.List;
+
+/**
+ * 分页对象
+ * 
+ * @author liu
+ *
+ * @param <T>
+ */
+public class Pager<T> {
+	// 分页大小
+	private int size;
+	// 分页起始
+	private int offset;
+	// 总记录数
+	private int total;
+	// 分页数据
+	private List<T> datas;
+}

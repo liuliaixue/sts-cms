@@ -1,0 +1,8 @@
+package org.alan.basic.model;
+
+public class SystemContext {
+	private static int pageSize;
+	private static int pageOffset;
+	private static String sort;
+
+}

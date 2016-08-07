@@ -1,0 +1,15 @@
+ package org.alan.basic.model;
+
+/**
+ * 分页对象
+ * @author liu
+ *
+ *
+ */
+public class Pager<T> {
+
+	private int size;
+	private int offset;
+	private int total;
+	private List<T> datas;
+}

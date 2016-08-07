@@ -1,0 +1,9 @@
+package org.alan.basic.dao;
+
+public interface IbaseDao<T> {
+	public T add(T t);
+	public void update(T t);
+	public void delelte(int id);
+	public T load(int id);
+
+}

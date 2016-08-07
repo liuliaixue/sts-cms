@@ -1,0 +1,25 @@
+package org.alan.basic.dao;
+
+/**
+ * 公共的DAO处理对象，这个对象包含了Hibernate的所有的基本操作和对SQL的操作
+ * 
+ * @author liu
+ *
+ * @param <T>
+ */
+
+public interface IbaseDao<T> {
+	
+	public T add(T t);
+
+	public void update(T t);
+
+	public void delelte(int id);
+
+	public T load(int id);
+	
+	public List<T> list(String hql,Object[] args);
+	public List<T> list(String hql,Object arg);
+	public List<T> list(String hql);
+
+}

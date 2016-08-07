@@ -1,0 +1,48 @@
+package org.alan.basic.dao;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+ * 公共的DAO处理对象，这个对象包含了Hibernate的所有的基本操作和对SQL的操作
+ * 
+ * @author liu
+ *
+ * @param <T>
+ */
+
+public interface IbaseDao<T> {
+
+	// 插入对象
+	public T add(T t);
+
+	// 更新对象
+	public void update(T t);
+
+	// 根据id删除对象
+	public void delelte(int id);
+
+	// 根据id加载对象
+	public T load(int id);
+	
+	/**
+	 * 不分页列表查询对象
+	 * @param hql
+	 * @param args
+	 * @return
+	 */
+	public List<T> list(String hql, Object[] args);
+	public List<T> list(String hql, Object arg);
+	public List<T> list(String hql);
+	/**
+	 * 基于别名和查询参数的混合列表对象
+	 * @param hql
+	 * @param args
+	 * @param alias
+	 * @return
+	 */
+	
+	public List<T> list(String hql,Object[ ] args,Map<String ,Object> alias);
+	public Pager<T> 
+
+}

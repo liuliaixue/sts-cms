@@ -1,0 +1,14 @@
+package org.alan.basic.model;
+/**
+ * 用来传递列表对象的ThreadLocal数据
+ * @author liu
+ *
+ */
+
+public class SystemContext {
+	private static int pageSize;
+	private static int pageOffset;
+	private static String sort;
+	private static String order;
+
+}

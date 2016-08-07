@@ -1,0 +1,14 @@
+ package org.alan.basic.model;
+
+/**
+ * 
+ * @author liu
+ *
+ */
+public class Pager {
+
+	private int size;
+	private int offset;
+	private int total;
+	private List<T> datas;
+}

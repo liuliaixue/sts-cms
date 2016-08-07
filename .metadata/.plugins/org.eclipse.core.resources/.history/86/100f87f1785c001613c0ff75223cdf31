@@ -1,0 +1,5 @@
+package org.alan.basic.model;
+
+public class Pager {
+
+}
